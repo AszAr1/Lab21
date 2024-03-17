@@ -6,9 +6,6 @@ class Program {
     public delegate double MathOperator(double a, double b);
 
     public static void Main(string[] args) {
-        EnterA();
-        EnterB();
-        ExecuteOperation(a, b, ChooseOperator());
     } 
 
     public static void EnterA() {
