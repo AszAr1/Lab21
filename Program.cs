@@ -1,6 +1,4 @@
-﻿using System.Security.AccessControl;
-
-namespace Lab21;
+﻿namespace Lab21;
 
 class Program {
     static double a;
@@ -8,8 +6,6 @@ class Program {
     public delegate double MathOperator(double a, double b);
 
     public static void Main(string[] args) {
-        EnterA();
-        EnterB();
     } 
 
     public static void EnterA() {
@@ -27,6 +23,9 @@ class Program {
             Console.WriteLine("Try again");
             str_b = Console.ReadLine()!;
         }
+    }
+    public static double ExecuteOperation(double a, double b, MathOperator func) {
+        return func(a, b);
     }
     public static MathOperator ChooseOperator() {
         Console.WriteLine("Choose one of four operation(+,-,*,/): ");
