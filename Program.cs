@@ -26,6 +26,7 @@ class Program {
         }
     }
     public static double Add(double a, double b) => a + b;
-    public static double Sub(double a, double b) => a - b;
+    public static double Subtract(double a, double b) => a - b;
+    public static double Multiply(double a, double b) => a * b;
 
 }
