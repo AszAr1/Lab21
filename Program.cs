@@ -6,6 +6,7 @@ class Program {
     
     public static void Main(string[] args) {
         EnterA();
+        EnterB();
     } 
 
     public static void EnterA() {
@@ -16,4 +17,14 @@ class Program {
             str_a = Console.ReadLine()!;
         }
     }
+    public static void EnterB() {
+        Console.WriteLine("Enter b: ");
+        string str_b = Console.ReadLine()!;
+        while (!double.TryParse(str_b, out b)) {
+            Console.WriteLine("Try again");
+            str_b = Console.ReadLine()!;
+        }
+    }
+
+    
 }
