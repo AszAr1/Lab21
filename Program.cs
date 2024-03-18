@@ -3,12 +3,16 @@
 class Program {
     static double a;
     static double b;
+
+    static string test = "asdfjsad;fjsa;dkf";
     public delegate double MathOperator(double a, double b);
 
     public static void Main(string[] args) {
         EnterA();
         EnterB();
         Console.WriteLine(ExecuteOperation(a, b, ChooseOperator()));
+
+        Console.WriteLine("new change: " + test);
     } 
 
     public static void EnterA() {
